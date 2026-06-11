@@ -1,13 +1,15 @@
 ---
+import '../styles/global.css';
 import '@fontsource/ubuntu/300.css';
 import '@fontsource/ubuntu/400.css';
 import '@fontsource/ubuntu/700.css';
 
 interface Props {
   title: string;
+  description?: string;
 }
 
-const { title } = Astro.props;
+const { title, description = 'A minimal personal blog.' } = Astro.props;
 ---
 
 <!doctype html>
@@ -18,30 +20,14 @@ const { title } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
   </head>
-  <body class="bg-[#f9f9f9] text-[#333] min-h-screen">
+  <body class="bg-[#FFF9F0] text-[#333] min-h-screen">
     <main class="max-w-[650px] mx-auto px-6 py-16">
       <slot />
     </main>
   </body>
 </html>
-
-<style>
-  @import '../styles/global.css';
-  
-  html {
-    font-family: 'Ubuntu', sans-serif;
-  }
-  
-  body {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1.125rem;
-    line-height: 1.8;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-  }
-</style>
-

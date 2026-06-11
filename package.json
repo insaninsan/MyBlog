@@ -9,7 +9,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@fontsource/merriweather": "^5.2.11",
     "@fontsource/ubuntu": "^5.2.8",
     "@tailwindcss/vite": "^4.1.17",
     "astro": "^5.16.0",
