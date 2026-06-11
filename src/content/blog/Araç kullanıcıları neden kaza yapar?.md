@@ -1,7 +1,7 @@
 ---
 title: "Araç kullanıcıları neden kaza yapar?"
 date: 2026-06-12
-description: "Günümüz streski ortamnının doğurduğu sonuçlara bir başka örnek daha"
+description: "Günümüz stresli ortamnının doğurduğu sonuçlara bir başka örnek daha"
 ---
 
 Araç kullanıcıları neden kaza yapar?
